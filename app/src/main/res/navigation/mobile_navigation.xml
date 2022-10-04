@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nitj_hostels">
+
+    <fragment
+        android:id="@+id/nitj_hostels"
+        android:name="com.example.nitjhostelapp.ui.home.HomeFragment"
+        android:label="@string/menu_nitj_hostel"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/hostel_policy"
+        android:name="com.example.nitjhostelapp.ui.hostelpolicy.hostelPolicyFragment"
+        android:label="@string/menu_policy"
+        tools:layout="@layout/fragment_hostelpolicy" />
+
+    <fragment
+        android:id="@+id/complaint_section"
+        android:name="com.example.nitjhostelapp.ui.complaint.complaintFragment"
+        android:label="@string/menu_Complaints"
+        tools:layout="@layout/fragment_complaint" />
+<!--    <fragment-->
+<!--        android:id="@+id/nit_hostels_available"-->
+<!--        android:name="com.example.nitjhostelapp.ui.slideshow.complaintFragment"-->
+<!--        android:label="@string/menu_Complaints"-->
+<!--        tools:layout="@layout/fragment_complaint" />-->
+
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.example.nitjhostelapp.ui.notification.notifications.notificationsFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/Account_settings"
+        android:name="com.example.nitjhostelapp.ui.account_settings.AccountSettingsFragment"
+        android:label="@string/menu_accountsettings"
+        tools:layout="@layout/fragment_account_settings" />
+
+    <fragment
+        android:id="@+id/About"
+        android:name="com.example.nitjhostelapp.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/help"
+        android:name="com.example.nitjhostelapp.ui.help.HelpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+</navigation>
